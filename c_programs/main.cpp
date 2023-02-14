@@ -10,5 +10,4 @@ int main()
     c = a + b;
     cout << "addition of the code is " << c;
     return 0;
-
-}
+};
