@@ -9,3 +9,4 @@ int main()
     getline(cin , name);
     cout << "hello welcome " << name;
 };
+
