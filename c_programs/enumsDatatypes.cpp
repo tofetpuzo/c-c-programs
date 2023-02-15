@@ -22,10 +22,6 @@ typedef int rollno;
 
 int main()
 {
-    dept d;
-    if (d == cs)
-    {
-        return true;
-    };
-    return 0;
+ rollno r1, r2, r3;
+ 
 }
