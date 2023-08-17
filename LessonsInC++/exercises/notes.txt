@@ -1,0 +1,5 @@
+# execrices
+# 1. find the prime number
+# 2. multiplication table
+# 3. find the sum of natural numbers
+# 4. print the * pyramid
