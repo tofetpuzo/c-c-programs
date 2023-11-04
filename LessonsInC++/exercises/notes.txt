@@ -1,0 +1,20 @@
+# execrices
+# 1. find the prime number
+# 2. multiplication table
+# 3. find the sum of natural numbers
+# 4. print the * pyramid
+# function to add two float nos.
+# function to find the max. of 3 nos
+# function to calculate m power n
+
+
+
+practice problems:
+
+# 1. find max and min element in an array
+
+# 2. avg. of all elements in an array print sum and avg. as output
+
+# 3. calculating grade of student according to his/her total marks.
+
+# 4. program to reverse an array.
