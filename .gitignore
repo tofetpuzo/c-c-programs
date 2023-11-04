@@ -34,3 +34,4 @@ relative/path/to/dir/anotherfile
 .trunk/
 .vscode/
 grpc/
+*/*/build/*
