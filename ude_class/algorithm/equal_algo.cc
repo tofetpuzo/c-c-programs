@@ -19,4 +19,12 @@ int main() {
   test("Hello", "world");
   test("Hello", "Hello");
   test("lambda", "LAMBDA");
+  int x{5};
+  int y = 1;
+  auto res = [y = y + 1](int x) {
+    cout << "y = " << y << endl;
+    return x + y;
+  };
+
+  cout << res(5) << endl;
 }
