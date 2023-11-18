@@ -34,3 +34,17 @@ relative/path/to/dir/anotherfile
 .trunk/
 .vscode/
 grpc/
+*/*/build/*
+
+# Ignore all files in `bin` dir
+bin/*
+*/env/*
+```
+**Note:** `!*/bin/*.jar` will not work if `bin` dir is ignored. So, you have to unignore `bin` dir first.
+
+### Ignore all files in a dir except one file
+```
+# Ignore all files in `bin` dir
+bin/*
+*/__pycache__/*
+
