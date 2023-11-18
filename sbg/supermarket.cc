@@ -5,12 +5,29 @@
 #include <vector>
 
 class SupermarketCheckout {
+
+private:
+  std::map<std::string, double> items;
+  std::vector<std::string> scannedItems;
+  std::set<std::string> discountItems = {
+      "item1", "item2"}; // Update with your discount items
+
 public:
   SupermarketCheckout() {}
 
   void addItem(std::string item, double price) { items[item] = price; }
 
   void scanItem(std::string item) { scannedItems.push_back(item); }
+
+  void displayReceipt(double total) {
+    std::cout << "Receipt:\n";
+    for (const std::string &item : scannedItems) {
+      std::cout << item << " - $" << std::fixed << std::setprecision(2)
+                << items[item] << "\n";
+    }
+    std::cout << "Total: $" << std::fixed << std::setprecision(2) << total
+              << "\n";
+  }
 
   void calculateTotal() {
     double total = 0.0;
@@ -40,22 +57,6 @@ public:
     }
 
     displayReceipt(total);
-  }
-
-private:
-  std::map<std::string, double> items;
-  std::vector<std::string> scannedItems;
-  std::set<std::string> discountItems = {
-      "item1", "item2"}; // Update with your discount items
-
-  void displayReceipt(double total) {
-    std::cout << "Receipt:\n";
-    for (const std::string &item : scannedItems) {
-      std::cout << item << " - $" << std::fixed << std::setprecision(2)
-                << items[item] << "\n";
-    }
-    std::cout << "Total: $" << std::fixed << std::setprecision(2) << total
-              << "\n";
   }
 };
 
