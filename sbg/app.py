@@ -12,7 +12,10 @@ def create_app():
             
         return render_template('index.html', **locals())
 
-    return app
+    return index()
+
+
+    
 
 if __name__ == '__main__':
     app = create_app()
