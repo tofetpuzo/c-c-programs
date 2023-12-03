@@ -76,6 +76,9 @@ int main() {
   checkout.scanItem("item1");
   checkout.scanItem("item2");
   checkout.scanItem("item2");
+  checkout.scanItem("item1");
+  checkout.scanItem("item1");
+  checkout.scanItem("item1");
 
   // Calculate and display the total price
   checkout.calculateTotal();

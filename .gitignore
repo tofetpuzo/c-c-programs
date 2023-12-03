@@ -46,5 +46,15 @@ bin/*
 ```
 # Ignore all files in `bin` dir
 bin/*
-*/__pycache__/*
+*/__pycache__/*.pyc
 
+*/__pycache__/
+
+*/__pycache__/*
+*/*/__pycache__/
+*/*/__pycache__/*
+
+grpc/
+
+*/*/target/*
+*/*/target/

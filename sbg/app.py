@@ -12,7 +12,7 @@ def create_app():
             
         return render_template('index.html', **locals())
 
-    return index()
+    return app
 
 
     
