@@ -33,6 +33,9 @@ relative/path/to/dir/anotherfile
 .DS_Store
 .trunk/
 .vscode/
+
+grpc/
+
 grpc/
 */*/build/*
 
@@ -58,3 +61,4 @@ grpc/
 
 */*/target/*
 */*/target/
+
