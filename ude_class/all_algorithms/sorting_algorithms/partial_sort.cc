@@ -30,6 +30,6 @@ int main() {
   partial_sort_copy(cbegin(keys), cend(keys), begin(v2), end(v2));
   cout << "v2: ";
   for (auto i : v2) {
-    cout << i << " ";
+    cout << i << "";
   }
 }
