@@ -39,6 +39,8 @@ grpc/
 grpc/
 */*/build/*
 
+*/*/*/build/
+
 # Ignore all files in `bin` dir
 bin/*
 */env/*
