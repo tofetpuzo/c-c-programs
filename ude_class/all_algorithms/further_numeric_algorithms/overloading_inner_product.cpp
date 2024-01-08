@@ -10,7 +10,7 @@ void print_vector(vector<int> v)
 {
     for (auto i : v)
     {
-        cout << i << ", ";
+        cout << i << " ";
     }
     cout << endl;
 }
