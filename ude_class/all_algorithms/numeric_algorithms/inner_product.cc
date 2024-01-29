@@ -14,22 +14,22 @@ void print_vector(const vector<int> &vec) {
 }
 
 int main() {
-  vector<int> vec{1, 2, 3, 4, 5};
-  vector<int> vecs{1, 3, 6, 10, 15};
+  vector<int> expected{1, 2, 3, 4, 5};
+  vector<int> actual{1, 3, 6, 10, 15};
 
   cout << "original vector: ";
-  print_vector(vec);
+  print_vector(expected);
 
   cout << "using the inner product algorithm: ";
 
-  auto result = inner_product(cbegin(vec), cend(vec), cbegin(vecs), 0);
+  auto result = inner_product(cbegin(expected), cend(expected), cbegin(actual), 0);
 
   cout << result << endl;
 
   cout << "using the inner product algorithm with a lambda: ";
 
   auto result2 = inner_product(
-      cbegin(vec), cend(vec), cbegin(vecs), 0,
+      cbegin(expected), cend(expected), cbegin(actual), 0,
       [](const auto &lhs, const auto &rhs) { return lhs + rhs; },
       [](const auto &lhs, const auto &rhs) { return lhs * rhs; });
 
@@ -38,7 +38,7 @@ int main() {
   //   using transform and accumulate algorithms
   vector<int> vec3;
 
-  transform(cbegin(vec), cend(vec), cbegin(vecs), back_inserter(vec3),
+  transform(cbegin(expected), cend(expected), cbegin(actual), back_inserter(vec3),
             multiplies<int>());
 
   cout << "using transform and accumulate algorithms with a lambda: ";
