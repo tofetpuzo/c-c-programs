@@ -6,7 +6,7 @@ def permute(nums):
     if len(nums) == 1:
         return [nums[:]]
     res = []
-    for i in range(len(nums)):    
+    for _ in range(len(nums)):
         n = nums.pop(0)
         perms = permute(nums)
         for perm in perms:
@@ -15,4 +15,5 @@ def permute(nums):
         nums.append(n)
     return res
 
-print(permute([1,2,3]))
+
+print(permute([1, 2, 3]))
