@@ -17,7 +17,7 @@ void printMap(const map<string, int> &scores) {
 int main() {
   map<string, int> scores;
   scores.insert(make_pair("John", 100));
-  scores.insert(make_pair("Doe", 200));
+  scores.insert(make_pair("Doe", 200)); 
   scores.insert(make_pair("Jane", 300));
   scores.insert(make_pair("Smith", 400));
   scores.insert(make_pair("Doe", 500));
