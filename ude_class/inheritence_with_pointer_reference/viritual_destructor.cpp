@@ -12,7 +12,7 @@ public:
 };
 class Circle : public Shape {
 public:
-  void draw() { cout << "Drawing a circle" << endl; }
+  void draw() const override { cout << "Drawing a circle" << endl; }
   ~Circle() { cout << "Circle destructor" << endl; }
 };
 
