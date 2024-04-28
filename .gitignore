@@ -76,3 +76,6 @@ grpc/
 
 */*/build/
 */*/*/build/
+
+# Ignore .json files
+*.json
