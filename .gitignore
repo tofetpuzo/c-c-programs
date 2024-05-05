@@ -79,3 +79,7 @@ grpc/
 
 # Ignore .json files
 *.json
+
+# Ignore all .exe files
+*.exe
+
