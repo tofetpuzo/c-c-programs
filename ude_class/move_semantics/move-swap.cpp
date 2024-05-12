@@ -48,14 +48,8 @@ public:
   // move assignment operator
   String &operator=(String &&arg) noexcept {
     cout << "Move Assignment operator called" << endl;
-    if (&arg != this) {
-      cout << "Reallocating memory\n";
-      delete[] data;
-      data = arg.data;
-      size = arg.size;
-      arg.data = nullptr;
-      arg.size = 0;
-    }
+    String temp{std::move(arg)};
+    swap(*this, temp);
     return *this;
   }
   int length() { return size; }

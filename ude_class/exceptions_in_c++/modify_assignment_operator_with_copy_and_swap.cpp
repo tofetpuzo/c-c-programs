@@ -21,7 +21,7 @@ public:
     }
   }
 
-  //   assignment operatior
+  //   assignment operator
   String &operator=(const String &arg) {
     cout << "Assignment operator called" << endl;
     String temp(arg);  // create a copy of arg
