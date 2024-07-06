@@ -66,4 +66,4 @@ int main() {
   Test test6;
   cout << "\nassigning from temporary:  ";
   test6 = Test(); // move assignment operator called
-}g
+}
