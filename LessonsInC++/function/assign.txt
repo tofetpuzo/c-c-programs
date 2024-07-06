@@ -1,8 +1,0 @@
-function to add two float nos.
-function to find the max. of 3 nos
-function to calculate m power n
-
-// assignment
-// declare a student structure
-// input name,age,roll_no, marks for 3 subject
-// outpuyt name,roll_no and avg_marks
