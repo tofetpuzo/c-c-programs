@@ -1,0 +1,13 @@
+Algorithms in C++
+merging_algorithm
+min_max_algo
+numeric_algorithms
+partition_algorithm
+permutation_algorithms
+random_number_algorithms
+remove_algorithm
+reordering_algorithms
+sorting_algorithms
+transform_algorithm
+write-only-algorithms
+write_algorm
