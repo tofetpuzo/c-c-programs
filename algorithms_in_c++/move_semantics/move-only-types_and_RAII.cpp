@@ -40,7 +40,11 @@ public:
     }
     return *this;
   }
+
+  ~NetworkConnection() { cout << "Destructor called" << endl; }
 };
+
+
 
 int main() {
   NetworkConnection conn1; // call default constructor
